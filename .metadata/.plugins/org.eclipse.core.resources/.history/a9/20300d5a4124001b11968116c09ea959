@@ -1,0 +1,23 @@
+package br.com.formula1.modelo;
+
+public class Carro {
+	
+	private String escuderia;
+	private short numeto;
+	private String cor;
+	private float velocidaeAtual;
+	private float valor;
+	private boolean status;
+	
+	public String retornarEscuderia() {
+		return escuderia;
+	}
+	
+	//Sintaxe do metodo no Java
+	//  <modificador>  <Tipo do Retorno>  <nome do metodo> (<Tipo do Parametro>)  {
+	public void preencherEscurederia(String param) {
+		escuderia=param;
+	}
+		
+
+}

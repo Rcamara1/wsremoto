@@ -1,0 +1,62 @@
+package repeticao;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		
+		/*
+		* 1º Parte:
+		* Jogador 1: digita um número inteiro
+		* Jogador 2: tem que advinhar, eqto ele não acertar, a aplicação fica
+		* pedindo para ele digitar um número.
+		*
+		* 2º Parte
+		* Implemente dicas para o Jogador 2, informando se o número que
+		* ele tem que advinhar é maior ou menor do que o que ele está digitando
+		*
+		* 3º Parte
+		* Exiba no final, a qtde de tentativas que foram utilizadas
+		* pelo jogador 2 até que ele advinhasse o número
+		* Dica: terão que criar uma variável pra contar!!!
+		*/
+		
+		
+		int num = Integer.parseInt(JOptionPane.showInputDialog("jogador 1 - Digite um numero: "));
+        int chute = 0;
+        int contador = 0;
+
+ 
+
+        do {
+            chute = Integer.parseInt(JOptionPane.showInputDialog("jogador 2 - tente adivinhar o numero digitado: "));
+            if(chute < num) 
+                System.out.println("Você errou! o numero escolhido é maior");
+
+ 
+
+            if(chute > num) 
+                System.out.println("Você errou! o numero escolhido é menor");
+
+ 
+
+            if(contador >= 10)
+                System.out.printf("a diferença entre o numero escolhido e o ultimo digitado(%d) é de %d\n ",chute,(num-chute));
+
+ 
+
+            contador++;
+        }while(chute != num);
+        System.out.printf("Você acertou! apos %d tentativas",contador);
+
+ 
+
+    }
+
+ 
+
+}
+ 
+		
+		
+		
+		

@@ -1,0 +1,29 @@
+package br.com.formula1.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.formula1.modelo.Carro;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		// Instaciando um objeto  >>>  crias as reparticoes do objeto
+		Carro objeto = new Carro();
+		//System.out.println("Objeto: " + objeto);
+		objeto.preencherEscurederia("ferrari");
+		System.out.println(objeto.retornarEscuderia());
+		objeto.preencherNumero(Short.parseShort(JOptionPane.showInputDialog("Numero:")));
+		System.out.println("escuderia" + objeto.retonarEscuderia));
+	
+		
+		objeto.preencherValor((float)1000000.0);
+		System.out.println(objeto.retornarPromoção());
+		
+		objeto.preencherBasico(shot) 10,  "Mac Laren", 500000);
+		System.out.println(objeto.exibirTudo());
+		
+		
+	}
+				
+}
+
